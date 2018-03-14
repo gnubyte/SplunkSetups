@@ -18,6 +18,8 @@ cd /opt/splunk/bin
 ./splunk start --accept-license
 ./splunk edit user admin -password PASSWORDHERE -role admin -auth admin:changeme 
 cd /opt/splunk/bin && ./splunk enable boot-start -user splunk
+# below, gives splunk permission to bind to port IP
+sudo setcap CAP_NET_BIND_SERVICE=+eip /opt/splunk/bin/splunk
 shutdown -r 0
 
 # on search heads ONLY...If AWS, USE PRIVATE IP! 
