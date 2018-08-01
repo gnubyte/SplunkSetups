@@ -8,8 +8,14 @@
 
 
 ######### RHEL Specifically ########
+sudo yum update -y
+sudo yum install epel-release -y
+sudo yum update -y
+sudo yum install sendmail -y
+sudo systemctl start fail2ban
 sudo yum install nano -y && sudo yum update -y && sudo yum install wget -y
 sudo yum install zip -y && sudo yum install unzip -y
+sudo yum install fail2ban -y
 wget -O splunk-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=7.0.1&product=splunk&filename=splunk-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz&wget=true'
 sudo tar xvzf splunk-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz -C /opt
 sudo groupadd splunk
