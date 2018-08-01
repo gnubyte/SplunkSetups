@@ -24,3 +24,4 @@ sudo -H -u splunk /opt/splunk/bin/splunk edit user admin -password changed -role
 sudo -H /opt/splunk/bin/splunk enable boot-start -user splunk
 export SPLUNK_HOME=/opt/splunk/ >> /home/splunk/.bashrc
 . /home/splunk/.bashrc
+sudo apt-get install letsencrypt -y
