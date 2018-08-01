@@ -8,9 +8,12 @@
 
 
 ######### Debian Specifically ########
+sudo apt-get update -y
 sudo apt-get install man-db -y
 sudo apt-get install nano -y && sudo apt-get update -y && sudo apt-get install wget -y
 sudo apt-get install zip -y && sudo apt-get install unzip -y
+sudo apt-get install fail2ban -y
+sudo apt-get install ufw -y
 wget -O splunk-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=7.0.1&product=splunk&filename=splunk-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz&wget=true'
 sudo tar xvzf splunk-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz -C /opt
 sudo groupadd splunk
