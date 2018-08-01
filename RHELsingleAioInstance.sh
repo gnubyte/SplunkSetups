@@ -13,6 +13,7 @@ sudo yum install epel-release -y
 sudo yum update -y
 sudo yum install sendmail -y
 sudo systemctl start fail2ban
+sudo systemctl enable fail2ban
 sudo yum install nano -y && sudo yum update -y && sudo yum install wget -y
 sudo yum install zip -y && sudo yum install unzip -y
 sudo yum install fail2ban -y
