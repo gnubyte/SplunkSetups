@@ -1,5 +1,5 @@
 # @Date: 08-01-2018
-# @Version: 1.1
+# @Version: 1.1.0
 # @Author: Patrick Hastings
 # @Distro: CentOS 7.x x86_64
 # @Instructions: Copy and paste this into a server and run with elevated permissions
