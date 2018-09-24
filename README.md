@@ -11,7 +11,7 @@ Simple Splunk setup scripts for a variety of causes
 ### cliUsefulCommands.sh
 _A list of commands found useful during deployment. Best for small teams or single server setups_
 
-#### :fire: not intended for scripted deployments
+#### :fire: For testing purposes only - not intended for production ready scripted deployments 
 
 When used in context, it is a good checklist for clearing fishbuckets, checking inputs, changing host level network configs for ease of splunk deployment server automation, etc.
 
@@ -34,5 +34,5 @@ Installation via tgz files of Splunk instance. Current link represents splunk 7.
 Run with elevated permissions, this will change the directories owner to Splunk and auto start the splunk instance.
 **this will change the current password to changed**
 
-#### :fire: RHEL based distros only
+#### :fire: RHEL & Debian based distros supported at this time only
 
